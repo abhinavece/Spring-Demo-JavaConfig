@@ -14,11 +14,10 @@ public class CricketCoach implements Coach {
 
 	@Override
 	public String getDailyWorkout() {
-		return "Cricket => Workout";
+		return "CricketCoach => Workout";
 	}
 
 	public String getDailyFortune() {
 		return fortuneService.getDailyFortune();
 	}
-
 }

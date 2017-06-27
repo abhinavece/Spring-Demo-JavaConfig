@@ -9,12 +9,12 @@ import org.springframework.stereotype.Component;
 public class SportsConfig {
 	
 	@Bean
-	public FortuneService hapyFortuneService(){
+	public FortuneService happyFortuneService(){
 		return new HappyFortuneService();
 	}
 	
 	@Bean
-	public Coach cricketCoaching(){
-		return new CricketCoach(hapyFortuneService());
+	public Coach cricketCoaching(){                     // Method name with small first letter "cricketCoaching" is the id
+		return new CricketCoach(happyFortuneService());
 	}
 }
